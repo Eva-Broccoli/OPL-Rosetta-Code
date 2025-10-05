@@ -1,3 +1,5 @@
+REM String variables are initially empty after declaring them.
+
 PROC main:
   LOCAL s$(10)
   checkstr:(s$)
