@@ -1,0 +1,7 @@
+PROC main:
+  LOCAL s$(100)
+  PRINT "Please enter a string."
+  INPUT s$
+  PRINT "Both character and byte length are",LEN(s$)
+  GET
+ENDP
