@@ -1,4 +1,4 @@
-REM 
+REM https://github.com/Eva-Broccoli/OPL-Rosetta-Code/blob/main/Arraylen.opl
 PROC main:
   LOCAL array$(2,6),i%
   ONERR errhand
