@@ -4,7 +4,7 @@ PROC main:
   LOCAL s$(100)
   PRINT "Please enter a string."
   INPUT s$
-  PRINT "Character length:,LEN(s$)
+  PRINT "Character length:",LEN(s$)
   PRINT "Byte length:",LEN(s$)+1
   GET
 ENDP
