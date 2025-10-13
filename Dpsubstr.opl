@@ -1,4 +1,4 @@
-https://github.com/Eva-Broccoli/OPL-Rosetta-Code/blob/main/Dpsubstr.opl
+REM https://github.com/Eva-Broccoli/OPL-Rosetta-Code/blob/main/Dpsubstr.opl
 PROG main:
   LOCAL string$(68),i%
   string$="'Twas brillig, and the slithy toves did gyre and gimble in the wabe."
