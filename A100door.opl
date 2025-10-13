@@ -1,3 +1,4 @@
+REM https://github.com/Eva-Broccoli/OPL-Rosetta-Code/blob/main/A100door.opl
 PROC main:
   LOCAL door%(100),i%,j%
   i%=1
