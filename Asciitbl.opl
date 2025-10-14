@@ -1,4 +1,4 @@
-REM Asciitbl.opl
+REM https://github.com/Eva-Broccoli/OPL-Rosetta-Code/blob/main/Asciitbl.opl
 PROC main:
   LOCAL i%,j%
   i%=32
