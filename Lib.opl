@@ -1,0 +1,37 @@
+REM Library of useful functions
+
+REM 1. Arrays with runtime length
+
+PROC ArrayLongCreate&:(length&)
+    LOCAL array&,bytes&
+    bytes& = length& * 4
+    array& = ALLOC(bytes&)
+    RETURN array&
+ENDP
+
+PROC ArrayLongDelete:(array&)
+    FREEALLOC array&
+ENDP
+
+PROC ArrayLongLength&:(array&)
+    LOCAL length&
+    length& = LENALLOC(array&) / 4
+    RETURN length&
+ENDP
+
+PROC ArrayLongGet&:(array&,index&)
+    LOCAL address&,value&
+    address& = index& * 4
+    address& = address& + array&
+    value& = PEEKL(address&)
+    RETURN value&
+ENDP
+
+PROC ArrayLongSet:(array&,index&,value&)
+    LOCAL address&
+    address& = index& * 4
+    address& = address& + array&
+    POKEL address&,value&
+ENDP
+
+REM 2. Lists with dynamic resizing when adding/removing elements
